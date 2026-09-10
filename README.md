@@ -50,7 +50,7 @@ Abra o seu gerenciador MySQL (phpMyAdmin, DBeaver ou MySQL Workbench).
 
 Crie um banco de dados chamado habit_tracker.
 
-Importe o arquivo database.sql (ou schema.sql) localizado na raiz do projeto para criar todas as tabelas necessárias.
+Importe o arquivo database.sql
 
 ### 3. Configurar o Backend (PHP)
 Abra o arquivo .env e preencha com as credenciais do seu banco de dados local:
