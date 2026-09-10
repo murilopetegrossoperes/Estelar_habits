@@ -1,10 +1,10 @@
 <?php
 class Database {
     // Configurações do seu banco de dados
-    private $host = "localhost";
-    private $db_name = "habit_tracker"; // Nome do banco que você vai criar
-    private $username = "root";
-    private $password = "Feves@34992"; // Insira a senha se houver
+    private $host = "";
+    private $db_name = ""; // Nome do banco que você vai criar
+    private $username = "";
+    private $password = ""; // Insira a senha se houver
     public $conn;
 
     // Método para obter a conexão
