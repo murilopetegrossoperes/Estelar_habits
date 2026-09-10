@@ -44,6 +44,38 @@ Antes de começar, você precisará ter instalado em sua máquina as seguintes f
 Siga as etapas abaixo para rodar o projeto localmente:
 
 ### 1. Clonar o Repositório
+
+### 2. Configurar o Banco de Dados
+Abra o seu gerenciador MySQL (phpMyAdmin, DBeaver ou MySQL Workbench).
+
+Crie um banco de dados chamado habit_tracker.
+
+Importe o arquivo database.sql (ou schema.sql) localizado na raiz do projeto para criar todas as tabelas necessárias.
+
+### 3. Configurar o Backend (PHP)
+Abra o arquivo .env e preencha com as credenciais do seu banco de dados local:
+
 ```bash
-git clone [https://github.com/SEU_USUARIO/estelar_habits.git](https://github.com/SEU_USUARIO/estelar_habits.git)
-cd estelar_habits
+DB_HOST=127.0.0.1
+DB_NAME=habit_tracker
+DB_USER=root
+DB_PASS=sua_senha_aqui
+```
+Inicie o seu servidor Apache e certifique-se de que a raiz do servidor aponta para a pasta principal do repositório.
+
+### 4. Configurar e Iniciar o Frontend (React)
+Abra um novo terminal e navegue até a pasta do frontend para instalar as dependências e iniciar o servidor de desenvolvimento:
+
+```bash
+# Entrar na pasta do frontend
+cd habit_tracker_front/estelar-habits-web
+
+# Instalar as dependências do Node
+npm install
+
+# Iniciar o servidor local do Vite
+npm run dev
+```
+
+### 5. Acessar a Aplicação
+Após iniciar o servidor Vite, o terminal exibirá a URL local (geralmente http://localhost:5173). Clique no link para abrir a interface do projeto no navegador.
